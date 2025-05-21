@@ -12,7 +12,7 @@ function render(data) {
 
 function onButtonClick() {
     console.log("버튼 클릭");
-    fetch('http://jsonplaceholder.typicode.com/users1/1/todos')
+    fetch('http://jsonplaceholder.typicode.com/users/1/todos')
     .then((response) => response.json())
     .then((json) => render(json));
 }
